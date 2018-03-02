@@ -32,6 +32,47 @@
                 "validate_as": "int",
                 "min_integer" : 0
             }
+        },
+        {
+            "id": "opt_string",
+            "optional": true,
+            "advanced": false,
+            "allow_multiple": false,
+            "field_type": "text"
+
+        },
+        {
+            "id": "opt_int",
+            "optional": true,
+            "advanced": false,
+            "allow_multiple": false,
+
+            "field_type": "text",
+            "text_options": {
+                "validate_as": "int",
+                "min_integer" : 0
+            }
+        },
+        {
+            "id": "opt_string_default",
+            "optional": true,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [ "a" ],
+            "field_type": "text"
+
+        },
+        {
+            "id": "opt_int_default",
+            "optional": true,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [ "0" ],
+            "field_type": "text",
+            "text_options": {
+                "validate_as": "int",
+                "min_integer" : 0
+            }
         }
     ],
     "behavior": {
@@ -52,6 +93,22 @@
                 {
                     "input_parameter": "min_length",
                     "target_property": "min_length"
+                },
+                {
+                    "input_parameter": "opt_string",
+                    "target_property": "opt_string"
+                },
+                {
+                    "input_parameter": "opt_string_default",
+                    "target_property": "opt_string_default"
+                },
+                {
+                    "input_parameter": "opt_int",
+                    "target_property": "opt_int"
+                },
+                {
+                    "input_parameter": "opt_int_default",
+                    "target_property": "opt_int_default"
                 }
             ],
             "output_mapping": [

@@ -31,6 +31,10 @@ module test1 {
         assembly_ref assembly_input_ref;
         string workspace_name;
         int min_length;
+        string opt_string;
+        string opt_string_default;
+        int opt_int;
+        int opt_int_default;
     } FilterContigsParams;
 
 
@@ -44,6 +48,7 @@ module test1 {
     typedef structure {
         string report_name;
         string report_ref;
+
         assembly_ref assembly_output;
         int n_initial_contigs;
         int n_contigs_removed;

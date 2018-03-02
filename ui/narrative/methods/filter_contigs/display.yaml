@@ -37,5 +37,27 @@ parameters :
             Min Length Threshold
         short-hint : |
             All contigs below this length will be removed
+    opt_string :
+        ui-name : |
+          A String
+        short-hint : |
+            A string that may or not be here
+    opt_int :
+        ui-name : |
+          A String
+        short-hint : |
+            A string that may or not be here
+    opt_string_default :
+        ui-name : |
+          A String
+        short-hint : |
+            A string that may or not be here
+    opt_int_default :
+        ui-name : |
+          A String
+        short-hint : |
+            A string that may or not be here
+
+
 description : |
     <p>This is a simple method designed to illustrate the KBase SDK.</p>
