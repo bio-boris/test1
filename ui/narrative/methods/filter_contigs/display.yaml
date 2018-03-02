@@ -44,17 +44,17 @@ parameters :
             A string that may or not be here
     opt_int :
         ui-name : |
-          A String
+          A int
         short-hint : |
             A string that may or not be here
     opt_string_default :
         ui-name : |
-          A String
+          A String default
         short-hint : |
             A string that may or not be here
     opt_int_default :
         ui-name : |
-          A String
+          A int default
         short-hint : |
             A string that may or not be here
 
