@@ -116,7 +116,7 @@ class test1:
         # Step 5 - Build a Report and return
         reportObj = {
             'objects_created': [{'ref': new_assembly, 'description': 'Filtered contigs'}],
-            'text_message': pprint.pformat(params, indent=4)
+            'text_message': pformat(params, indent=4)
         }
         report = KBaseReport(self.callback_url)
         report_info = report.create({'report': reportObj, 'workspace_name': params['workspace_name']})
